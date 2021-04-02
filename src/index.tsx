@@ -1,6 +1,6 @@
 import { render } from "react-dom";
 
-import App from "./Editor";
+import Editor from "./Editor";
 
 const rootElement = document.getElementById("root");
-render(<App />, rootElement);
+render(<Editor />, rootElement);
