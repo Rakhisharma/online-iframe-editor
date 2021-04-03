@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Grid, TextField} from "@material-ui/core";
+import { Grid, TextField, Typography} from "@material-ui/core";
 
 import useStyles from './styles';
 export default function App() {
-  const { input } = useStyles();
+
+    const { root, header, input, resultContent } = useStyles();
   const [iframeValue, setIframeValue] = useState('');
 
   const handleChange = (value: any) => {
@@ -13,7 +14,15 @@ export default function App() {
 
   return (
     <>
-      <Grid container spacing={3}>
+      <Grid container spacing={3} className={root}>
+        <Grid item xs={12}>
+          <Typography
+            variant="h4"
+            className={header}
+            >
+            Online iframe viewer
+          </Typography>
+        </Grid>
         <Grid item xs={12}>
           <TextField
             label="Paste your iframe snippet"
@@ -29,7 +38,7 @@ export default function App() {
             multiline
           />
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs className={resultContent}>
             <div
               dangerouslySetInnerHTML={{
                 __html: iframeValue
