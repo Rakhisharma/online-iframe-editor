@@ -1,6 +1,10 @@
-import { render } from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Editor from './Editor';
 
-import Editor from "./Editor";
-
-const rootElement = document.getElementById("root");
-render(<Editor />, rootElement);
+ReactDOM.render(
+    <React.StrictMode>
+        <Editor />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
