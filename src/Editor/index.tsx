@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Grid, TextField, Typography } from '@material-ui/core';
 
 import useStyles from './styles';
-export default function App() {
+
+const Editor = () => {
     const { root, header, input, resultContent } = useStyles();
     const [iframeValue, setIframeValue] = useState('');
 
@@ -43,4 +44,6 @@ export default function App() {
             </Grid>
         </>
     );
-}
+};
+
+export default Editor;
