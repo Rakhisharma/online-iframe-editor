@@ -4,7 +4,7 @@ import { Grid, TextField, Typography} from "@material-ui/core";
 import useStyles from './styles';
 export default function App() {
 
-    const { root, header, input, resultContent } = useStyles();
+  const { root, header, input, resultContent } = useStyles();
   const [iframeValue, setIframeValue] = useState('');
 
   const handleChange = (value: any) => {
@@ -20,7 +20,7 @@ export default function App() {
             variant="h4"
             className={header}
             >
-            Online iframe viewer
+            {`Online <iframe> viewer`}
           </Typography>
         </Grid>
         <Grid item xs={12}>
