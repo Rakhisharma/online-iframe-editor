@@ -10,11 +10,11 @@ const styles = makeStyles(() => ({
   header: {
     margin: '15px',
     textAlign: 'center',
+    fontFamily: "UI-MONOSPACE"
   },
 
   input: {
     minHeight: '180px',
-    margin: '10px',
     borderColor: '#000',
     border: "2px"
   },
