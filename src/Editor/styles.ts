@@ -7,7 +7,7 @@ const styles = makeStyles(() => ({
     },
 
     header: {
-        margin: '15px',
+        margin: '10px',
         textAlign: 'center',
         fontFamily: 'UI-MONOSPACE'
     },
