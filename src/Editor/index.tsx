@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import { Grid, TextField, Typography } from '@material-ui/core';
+import { Grid, TextField } from '@material-ui/core';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
 import useStyles from './styles';
-import { ERROR_TITLE, ERROR_MESSAGE } from './constants';
 import Header from '../Header';
+import { ERROR_TITLE, ERROR_MESSAGE } from './constants';
 
 const Editor = () => {
     const { root, input, resultContent } = useStyles();
