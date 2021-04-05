@@ -3,10 +3,11 @@ import { Grid, TextField, Typography } from '@material-ui/core';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
 import useStyles from './styles';
-import { ERROR_TITLE, ERROR_MESSAGE, HEADER } from './constants';
+import { ERROR_TITLE, ERROR_MESSAGE } from './constants';
+import Header from '../Header';
 
 const Editor = () => {
-    const { root, header, input, resultContent } = useStyles();
+    const { root, input, resultContent } = useStyles();
     const [iframeValue, setIframeValue] = useState<string>('');
     const [error, setError] = useState<boolean>(false);
 
@@ -26,9 +27,7 @@ const Editor = () => {
     return (
         <Grid container spacing={3} className={root}>
             <Grid item xs={12}>
-                <Typography variant="h4" className={header}>
-                    {HEADER}
-                </Typography>
+                <Header />
             </Grid>
             <Grid item xs={12}>
                 <TextField

@@ -6,22 +6,13 @@ const styles = makeStyles(() => ({
         width: '100%'
     },
 
-    header: {
-        margin: '10px',
-        textAlign: 'center',
-        fontFamily: 'UI-MONOSPACE'
-    },
-
     input: {
-        minHeight: '180px',
+        minHeight: '150px',
         borderColor: '#000',
         border: '2px'
     },
 
     resultContent: {
-        marginTop: '10px',
-        borderColor: '#000',
-        border: '4px',
         minHeight: '500px'
     }
 }));
