@@ -18,7 +18,11 @@ const Editor = () => {
 
     useEffect(() => {
         const isIFrame = window.parent.frames.length > 0;
-        if (iframeValue !== '' && !isIFrame) {
+        if (
+            !CONTAINS_IFRAME_REGEX.test(iframeValue) &&
+            !isIFrame &&
+            iframeValue !== ''
+        ) {
             setError(true);
         } else {
             setError(false);
