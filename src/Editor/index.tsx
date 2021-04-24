@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import { Grid, TextField } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
 import useStyles from './styles';
 import Header from '../Header';
-import { ERROR_TITLE, ERROR_MESSAGE } from './constants';
+import TextField from '../Component/TextField';
+import { ERROR_TITLE, ERROR_MESSAGE, CONTAINS_IFRAME_REGEX } from './constants';
 
 const Editor = () => {
     const { root, input, resultContent } = useStyles();
@@ -33,8 +34,7 @@ const Editor = () => {
                 <TextField
                     label="Paste your iframe snippet"
                     variant="outlined"
-                    onChange={({ target }) => {
-                        const value = target.value;
+                    onChange={value => {
                         handleChange(value);
                     }}
                     InputProps={{
