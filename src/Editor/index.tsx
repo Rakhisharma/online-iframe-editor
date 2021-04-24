@@ -34,14 +34,8 @@ const Editor = () => {
                 <TextField
                     label="Paste your iframe snippet"
                     variant="outlined"
-                    onChange={target => {
-                        console.log(target);
-                        const value = target;
-                        if (CONTAINS_IFRAME_REGEX.test(value)) {
-                            handleChange(value);
-                        } else {
-                            setError(true);
-                        }
+                    onChange={value => {
+                        handleChange(value);
                     }}
                     InputProps={{
                         classes: { input }
