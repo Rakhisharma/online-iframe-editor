@@ -1,13 +1,13 @@
 import { ChangeEvent, ReactElement } from 'react';
-import { TextField, TextFieldProps } from '@material-ui/core';
+import { InputProps, TextField } from '@material-ui/core';
 
 interface Props {
     label: string;
-    variant?: TextFieldProps['variant'];
+    onChange: (newValue: string) => void;
     fullWidth?: boolean;
     multiline?: boolean;
-    InputProps?: TextFieldProps['InputProps'];
-    onChange: (newValue: string) => void;
+    InputProps?: InputProps;
+    variant?: 'standard' | 'filled' | 'outlined';
 }
 
 const Component = ({
