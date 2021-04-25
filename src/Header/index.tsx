@@ -7,7 +7,8 @@ import {
     REPORT_ISSUE,
     TWITTER_LINK,
     CREATED_BY,
-    TWITTER_USER
+    TWITTER_USER,
+    IFRAME_EXAMPLE
 } from './constants';
 
 const Header = () => {
@@ -34,6 +35,9 @@ const Header = () => {
             <Grid item xs={12}>
                 <Typography variant="h4" className={header}>
                     {HEADER}
+                    <Typography variant="subtitle2">
+                        Paste in editor to try: {IFRAME_EXAMPLE}
+                    </Typography>
                 </Typography>
             </Grid>
         </Grid>
