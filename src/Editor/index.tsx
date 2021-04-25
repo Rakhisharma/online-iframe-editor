@@ -48,7 +48,6 @@ const Editor = () => {
                     multiline
                 />
             </Grid>
-
             <Grid item xs className={resultContent}>
                 {error ? (
                     <Alert severity="error">
