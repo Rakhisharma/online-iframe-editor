@@ -25,4 +25,5 @@ Try live here: https://www.iframeeditor.com/
 If you have questions feel free to reach out [atbrakhi](https://twitter.com/atbrakhi)
 
 
-### Licence: MIT
+## Licence
+MIT
