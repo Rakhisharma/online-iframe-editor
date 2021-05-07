@@ -1,5 +1,5 @@
 # Online iframe editor
-Try live here: https://www.iframeeditor.com/
+Try here: https://www.iframeeditor.com/
 
 # ![chrome-capture (60)](https://user-images.githubusercontent.com/9638740/116007746-8d49a200-a611-11eb-8b1a-c12cc731891c.gif)
 
