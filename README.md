@@ -26,4 +26,4 @@ If you have questions feel free to reach out [atbrakhi](https://twitter.com/atbr
 
 
 ## Licence
-MIT
+[MIT](https://github.com/Rakhisharma/online-iframe-editor/blob/main/LICENCE)
